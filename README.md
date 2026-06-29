@@ -1,23 +1,23 @@
-# 🌿 Plant Disease Detection from Leaf Images
+#  Plant Disease Detection from Leaf Images
 
-## 📌 Project Overview
+##  Project Overview
 
-This project detects plant diseases from leaf images using a Convolutional Neural Network (CNN). The model is trained on the PlantVillage dataset and deployed using Streamlit, allowing users to upload a leaf image and receive the predicted disease along with the confidence score.
-
----
-
-## 🚀 Features
-
-- Detects plant diseases from leaf images
-- Image upload through Streamlit
-- CNN model built using TensorFlow/Keras
-- Displays prediction and confidence score
-- Training accuracy graph
-- Easy-to-use web interface
+Plant Disease Detection is a Deep Learning project that classifies plant leaf diseases using a Convolutional Neural Network (CNN). The model is trained on the PlantVillage dataset and deployed using Streamlit, allowing users to upload a leaf image and receive the predicted disease along with the confidence score.
 
 ---
 
-## 🛠 Technologies Used
+##  Features
+
+-  Detects plant diseases from leaf images
+-  Upload leaf images through a Streamlit web interface
+-  CNN model built using TensorFlow and Keras
+-  Displays prediction with confidence score
+-  Generates training accuracy graph
+-  Simple and user-friendly interface
+
+---
+
+##  Technologies Used
 
 - Python
 - TensorFlow
@@ -29,18 +29,18 @@ This project detects plant diseases from leaf images using a Convolutional Neura
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
-**PlantVillage Dataset**
+**Dataset:** PlantVillage
 
-The dataset contains thousands of leaf images belonging to different healthy and diseased plant classes.
+The PlantVillage dataset contains over 20,000 plant leaf images belonging to 15 healthy and diseased classes. The images are used to train and evaluate the CNN model for disease classification.
 
 ---
 
 ## 📁 Project Structure
 
-```
-Plant-Disease-Detection
+```text
+Plant-Disease-Detection/
 │
 ├── dataset/
 │   └── PlantVillage/
@@ -52,9 +52,10 @@ Plant-Disease-Detection
 ├── uploads/
 │
 ├── screenshots/
-│   ├── home.png
-│   ├── prediction.png
-│   └── accuracy_plot.png
+│   ├── image.png
+│   ├── image1.png
+│   ├── image2.png
+│   └── image3.png
 │
 ├── train.py
 ├── predict.py
@@ -66,21 +67,21 @@ Plant-Disease-Detection
 
 ---
 
-## ⚙ Installation
+##  Installation
 
-Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Plant-Disease-Detection.git
-```
-
-Go to the project folder
+### 1. Clone the Repository
 
 ```bash
-cd Plant-Disease-Detection
+git clone https://github.com/sujibaskar/Plant-Disease-Detection.git
 ```
 
-Install required packages
+### 2. Navigate to the Project Folder
+
+```bash
+cd plant
+```
+
+### 3. Install Required Libraries
 
 ```bash
 pip install -r requirements.txt
@@ -88,63 +89,79 @@ pip install -r requirements.txt
 
 ---
 
-## ▶ Run the Project
+##  Run the Project
 
-### Train the Model
+### Train the CNN Model
 
 ```bash
 python train.py
 ```
 
-### Launch the Streamlit App
+### Launch the Streamlit Application
 
 ```bash
 python -m streamlit run app.py
 ```
 
----
-
-# 📸 Output Screenshots
-
-## Home Screen
-
-![Home](screenshots/image.png)
+The application will open automatically in your browser.
 
 ---
 
-## Disease Prediction
+#  Output Screenshots
 
-![Prediction](screenshots/image1.png)
-(screenshots/image2.png)
+##  Home Screen
 
-
----
-
-## Model Accuracy
-
-![Accuracy](screenshots/image3.png)
-
+![Home Screen](screenshots/image.png)
 
 ---
 
-## 📈 Model Performance
+##  Disease Prediction Example 1
 
-- Total Classes : 15
-- Image Size : 128 × 128
-- CNN Architecture
-- Validation Split : 20%
-- Optimizer : Adam
-- Loss Function : Categorical Crossentropy
+![Prediction 1](screenshots/image1.png)
 
 ---
 
-## Sample Prediction
+##  Disease Prediction Example 2
 
-| Input Image | Prediction | Confidence |
-|-------------|------------|------------|
-| Potato leaf | Potato Late Blight | 97.97% |
+![Prediction 1](screenshots/image2.png)
 
 ---
 
+##  Model Accuracy
+
+![Accuracy Plot](screenshots/image3.png)
+
+---
+
+## Model Performance
+
+| Parameter | Value |
+|-----------|-------|
+| Model | Convolutional Neural Network (CNN) |
+| Dataset | PlantVillage |
+| Number of Classes | 15 |
+| Image Size | 128 × 128 |
+| Validation Split | 20% |
+| Optimizer | Adam |
+| Loss Function | Categorical Crossentropy |
+| Framework | TensorFlow / Keras |
+
+---
+
+##  Sample Prediction
+
+| Input Image | Predicted Disease | Confidence |
+|-------------|-------------------|------------|
+| Potato Leaf | Potato Late Blight | 97.97% |
+
+---
+
+## 📈 Results
+
+- Successfully classified 15 plant disease classes.
+- Developed a CNN model for plant disease recognition.
+- Built an interactive Streamlit web application.
+- Displays disease prediction with confidence score.
+- Generates training accuracy visualization after model training.
 
 
